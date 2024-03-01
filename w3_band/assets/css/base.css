@@ -1,0 +1,57 @@
+/* 
+1.header
+2.slider
+3.content
+    -about
+    -tour
+    -contact
+4.footer
+*/
+/* 
+  1.từ ngoài vào trong 
+  2. từ trên xuống dưới
+  3. từ tổng quan đến chi tiết
+*/
+/* 
+  1.vị trí 
+  2. kịch thước 
+  3. màu sắc
+  4.kiểu dáng
+*/
+
+:root {
+  --height: 4.6rem;
+  --black: #000;
+  --while: #fff;
+  --ccc: #ccc;
+  --red: #f44336;
+  --color-text: #6e6e6e;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}

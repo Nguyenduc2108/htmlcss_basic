@@ -1,0 +1,514 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Common */
+.text-while {
+  color: #fff !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.df {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mt-8 {
+  margin-top: 0.8rem !important;
+}
+.mt-16 {
+  margin-top: 1.6rem !important;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1.2rem 2rem;
+  color: var(--while);
+  background: var(--black);
+  cursor: pointer;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.btn:hover {
+  color: var(--black);
+  background: var(--ccc);
+}
+
+.float-right {
+  float: right !important;
+}
+
+/* main */
+.wrapper {
+}
+
+.header {
+  height: var(--height);
+  background: var(--black);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav > li {
+  display: inline-block;
+  position: relative;
+}
+.nav > li > a {
+  color: var(--while);
+  text-transform: uppercase;
+}
+
+.nav li a {
+  padding: 0 2.4rem;
+  line-height: var(--height);
+  display: block;
+}
+
+.nav li:hover .sub-nav {
+  display: block;
+}
+
+.nav > li:hover > a {
+  color: var(--black);
+  background: var(--ccc);
+}
+
+.nav .sub-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 16rem;
+  background: var(--while);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav .sub-nav a {
+  color: var(--black);
+  padding: 0 1.2rem;
+  line-height: 3.8rem;
+  text-transform: capitalize;
+}
+
+.nav .sub-nav li:hover a {
+  background: var(--ccc);
+}
+
+.header .mobile-menu,
+.header .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.header .search:hover {
+  background: var(--red);
+}
+
+.header .mobile-menu {
+  display: none;
+}
+
+.header .mobile-menu .menu-icon,
+.header .search .search-icon {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 2.3rem;
+  line-height: var(--height);
+}
+
+.header .mobile-menu:hover .menu-icon {
+  color: var(--black);
+  background: var(--ccc);
+}
+
+.slider {
+  padding-top: 50%;
+  margin-top: var(--height);
+  background: url("../images/la.jpg") top center / cover no-repeat;
+  position: relative;
+}
+
+.text-slider {
+  position: absolute;
+  left: 50%;
+  bottom: 4.7rem;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--while);
+  /* width: 100%;  */
+  /* right: 0;left: 0; */
+}
+
+.text-slider .heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.text-slider .desc {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 0 1px #000;
+}
+
+.content .content-section {
+  width: 80rem;
+  max-width: 100%;
+  padding: 6.4rem 1.6rem 11.2rem;
+  margin: 0 auto;
+}
+
+.content .content-section .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+.content .content-section .opacity {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 2.5rem 0;
+}
+
+.content .content-section .about-desc {
+  font-size: 1.5rem;
+  margin-bottom: 4.8rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.content .member-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.content .member-group {
+  margin: auto;
+  text-align: center;
+}
+
+.content .name {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content .image {
+  width: 60%;
+  border-radius: 0.4rem;
+}
+
+.tour-section {
+  background: #000;
+}
+
+.tour-section .ticket-list {
+  margin-top: 4rem;
+  background: var(--while);
+}
+
+.tour-section .ticket-list li {
+  font-size: 1.5rem;
+  color: #757575;
+  padding: 1.1rem 1.6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tour-section .ticket-list .sold-out {
+  margin-left: 1.6rem;
+  padding: 0.3rem 0.7rem;
+  color: var(--while);
+  background: var(--red);
+}
+
+.tour-section .ticket-list .quantity {
+  --height-quantity: 2.4rem;
+  float: right;
+  color: var(--while);
+  background: var(--black);
+  width: var(--height-quantity);
+  height: var(--height-quantity);
+  margin-right: 1.6rem;
+  margin-top: -0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: var(--height-quantity);
+}
+
+.tour-list {
+  display: flex;
+  margin-top: 3.2rem;
+}
+
+.tour-list .tour-group {
+  margin: auto;
+}
+
+.tour-list .tour-group .group-img {
+  overflow: hidden;
+}
+
+.tour-list .tour-group .tour-img {
+  display: block;
+  transition: 0.4s ease-in-out scale;
+}
+
+.tour-list .tour-group .tour-img:hover {
+  opacity: 0.8;
+  scale: 1.2;
+}
+
+.tour-list .tour-content {
+  background: var(--while);
+  padding: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.tour-list .tour-content .heading {
+  text-transform: capitalize;
+}
+
+.tour-list .tour-content .day {
+  margin: 1.5rem 0;
+  opacity: 0.6;
+}
+
+.tour-list .tour-content .desc {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.contact-container {
+  display: flex;
+  margin-top: 4.8rem;
+}
+
+.contact-info {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #101aef;
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.info-icon {
+  width: 3rem;
+  display: inline-block;
+}
+
+.contact-form input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.1rem 1rem;
+  border: 1px solid #ccc;
+}
+
+.map {
+  vertical-align: middle;
+}
+
+.footer {
+  padding: 6.4rem 1.6rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.footer-about .social {
+  font-size: 2.4rem;
+}
+
+.footer-about .social a {
+  margin: 0 0.1rem;
+  color: #757575;
+}
+.footer-about .medium a:hover,
+.footer-about .social a:hover {
+  opacity: 0.8;
+}
+
+.footer-about .social a i {
+  width: 1.8rem;
+}
+
+.footer-about .medium {
+  margin: 2.8rem 0;
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.footer-about .medium a {
+  color: #757575;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0;
+  visibility: hidden; */
+  /* transition: 0.2s ease-in-out; */
+  /* transition-property: opacity, visibility; */
+  display: none;
+}
+
+.modal.open {
+  /* opacity: 1;
+  visibility: visible; */
+  display: flex;
+}
+
+.modal-container {
+  position: relative;
+  width: 90rem;
+  max-width: calc(100% - 3.2rem);
+  min-height: 20rem;
+  background-color: var(--while);
+  animation: modalFaceIn ease 0.5s;
+}
+
+.modal-container .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.5rem 1.7rem;
+  color: var(--while);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.modal-container .close:hover {
+  opacity: 1;
+  color: var(--black);
+  background: var(--ccc);
+}
+
+.modal-container .modal-header {
+  height: 13rem;
+  background: #009688;
+  color: var(--while);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.4rem;
+}
+
+.modal-container .modal-header .title {
+  margin-left: 1.6rem;
+}
+
+.modal-container .modal-body {
+  padding: 1.6rem;
+}
+
+.modal-container .modal-body .modal-label {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+
+.modal-container .modal-body .modal-input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.1rem;
+  margin-bottom: 2.4rem;
+  border: 1px solid #ccc;
+}
+
+.modal-container .modal-body .buy-ticket {
+  outline: none;
+  border: none;
+  opacity: 1;
+  width: 100%;
+  padding: 1.8rem;
+  margin-bottom: 2.8rem;
+  font-size: 1.5rem;
+  color: var(--while);
+  background-color: #009688;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.modal-container .modal-body .buy-ticket:hover {
+  opacity: 0.9;
+}
+
+.modal-container .modal-footer {
+  padding: 0 1.6rem 2.8rem;
+}
+
+.modal-container .modal-footer .help {
+  text-align: right;
+}
+
+.modal-container .modal-footer .help a {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

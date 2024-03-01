@@ -1,0 +1,127 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+  .contact-info {
+    line-height: 2;
+  }
+
+  .contact-form input {
+    padding: 1.4rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  .contact-submit {
+    font-size: 1.6rem;
+  }
+
+  .footer-about .social {
+    font-size: 2.8rem;
+  }
+
+  .footer-about .social a i {
+    width: 2.4rem;
+    margin: 0 0.8rem;
+  }
+
+  .footer-about .medium a {
+    display: inline-block;
+    padding: 1.5rem 0;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .btn {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav .sub-nav a {
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .s-col-full {
+    width: 100%;
+  }
+
+  .s-mb-8 {
+    margin-bottom: 0.8rem;
+  }
+  .header {
+    overflow: hidden;
+  }
+
+  .header .search {
+    display: none;
+  }
+
+  .header .mobile-menu {
+    display: block;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav > li {
+    display: block;
+  }
+
+  .nav > li:first-child {
+    display: inline-block;
+  }
+
+  .nav li a {
+    padding: 0.1rem 2.4rem;
+  }
+
+  .nav .sub-nav {
+    position: initial;
+    background: var(--black);
+  }
+
+  .nav .sub-nav a {
+    color: var(--while);
+    padding: 0.5rem 4.1rem;
+  }
+
+  .text-slider {
+    display: none;
+  }
+
+  .content .member-list {
+    flex-wrap: wrap;
+  }
+
+  .content .member-group {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .tour-list {
+    flex-wrap: wrap;
+  }
+
+  .tour-list .tour-group {
+    margin: 0.8rem auto;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1.6rem 2rem;
+  }
+
+  .contact-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    margin-bottom: 3rem;
+  }
+}
