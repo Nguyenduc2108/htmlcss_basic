@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+    }
+    .course-item {
+      background: orange;
+      height: 260px;
+    }
+    h1 {
+      line-height: 260px;
+      color: #fff;
+      margin: 0;
+    }
+    .category {
+      background: green;
+      height: 260px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    @media (max-width: 1023px) {
+      .course-item {
+        margin-top: 16px;
+      }
+    }
+  </style>
+  <body>
+    <div class="grid wide container">
+      <div class="row">
+        <div class="col l-3 m-0 c-0">
+          <div class="category">
+            <ul>
+              <li>js</li>
+              <li>js</li>
+              <li>js</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col l-9 m-12 c-12">
+          <div class="row">
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 1</h1>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 1</h1>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course 1</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
